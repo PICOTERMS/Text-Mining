@@ -124,7 +124,7 @@ The following source was used to guide this selection:
 - **Best Algorithm:** Spectral Clustering  
   A Davies-Bouldin Index of 0.47 signifies high-quality clusters, as lower values represent better clustering.
 
- ![image](https://github.com/user-attachments/assets/6be7c234-7bff-4f4f-a651-12a403aebeeb)
+
 
 
 ### Recommendations
