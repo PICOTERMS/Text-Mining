@@ -77,6 +77,8 @@ The following source was used to guide this selection:
 ---
 
 ## Analysis and Interpretation of Clustering Results
+![image](https://github.com/user-attachments/assets/2d189a96-aba4-4ba8-839f-f9b0e2f5c0bd)
+
 
 ### Clustering Algorithm Performance
 
@@ -85,28 +87,32 @@ The following source was used to guide this selection:
    - **Interpretation:**  
      K-Means performed poorly on this dataset. The low Silhouette Score indicates that the clusters are not well-defined, and data points may not be correctly assigned to clusters.
 
-   ![K-Means Clustering (PCA Visualization, Silhouette Score: 0.03)](images/kmeans_pca.png)
+  ![image](https://github.com/user-attachments/assets/8f75ec4d-73d4-44b3-b3d0-0fe76b694752)
+
 
 2. **Agglomerative Clustering:**
    - **Silhouette Score:** 0.45
    - **Interpretation:**  
      Agglomerative Clustering showed moderate performance. The Silhouette Score of 0.45 indicates that the clusters are reasonably well-formed, but there is still room for improvement.
 
-   ![Dendrogram for Agglomerative Clustering](images/agglomerative_dendrogram.png)
+![image](https://github.com/user-attachments/assets/fd7dcbca-e54a-46b5-81bb-a55572cd2273)
+
 
 3. **DBSCAN:**
    - **Davies-Bouldin Index:** Cannot be calculated (only one cluster or no clusters).
    - **Interpretation:**  
      DBSCAN failed to create meaningful clusters due to unsuitable parameter choices (`eps` and `min_samples`). The algorithm treated most data points as noise or created only a single cluster.
 
-   ![DBSCAN Clustering (UMAP Visualization)](images/dbscan_umap.png)
+![image](https://github.com/user-attachments/assets/44674e00-2e9a-46a3-aade-e4172fe0094b)
+
 
 4. **Spectral Clustering:**
    - **Davies-Bouldin Index:** 0.47
    - **Interpretation:**  
      Spectral Clustering performed the best among the tested algorithms. The Davies-Bouldin Index of 0.47 indicates very good clustering quality, with well-separated clusters.
 
-   ![Spectral Clustering (UMAP Visualization)](images/spectral_umap.png)
+![image](https://github.com/user-attachments/assets/7bbff1dd-d927-44a7-99d0-3e787a92d59b)
+
 
 ### Visualization of Results
 
@@ -118,7 +124,8 @@ The following source was used to guide this selection:
 - **Best Algorithm:** Spectral Clustering  
   A Davies-Bouldin Index of 0.47 signifies high-quality clusters, as lower values represent better clustering.
 
-   ![Davies-Bouldin Index for Spectral Clustering](images/spectral_davies_bouldin.png)
+ ![image](https://github.com/user-attachments/assets/6be7c234-7bff-4f4f-a651-12a403aebeeb)
+
 
 ### Recommendations
 
@@ -148,6 +155,7 @@ This section presents a detailed interpretation and comparison of topic modeling
 1. **Latent Dirichlet Allocation (LDA):** A probabilistic approach to topic modeling.
 2. **Non-Negative Matrix Factorization (NMF):** A matrix factorization-based method.
 3. **BERTopic:** A modern technique leveraging transformers and clustering algorithms.
+![image](https://github.com/user-attachments/assets/c6c3ec56-4c5b-446e-a970-c5aa605e25d4)
 
 ---
 
@@ -171,6 +179,9 @@ This section presents a detailed interpretation and comparison of topic modeling
 - Predefining the number of topics limits flexibility.
 - Sensitive to parameter tuning (e.g., alpha, beta values).
 
+![image](https://github.com/user-attachments/assets/50be5105-7e78-46ee-8ecc-3ab4d02df6f1)
+
+
 ---
 
 #### **Non-Negative Matrix Factorization (NMF)**
@@ -185,6 +196,9 @@ This section presents a detailed interpretation and comparison of topic modeling
 
 - Generates sharp and actionable insights due to its reliance on factorization.
 - Efficient for sparse datasets with distinct word distributions.
+
+![image](https://github.com/user-attachments/assets/18e62bdb-0da8-43d4-a30c-e2e59a8b4496)
+
 
 ---
 
@@ -201,6 +215,8 @@ This section presents a detailed interpretation and comparison of topic modeling
 
 - Context-aware embeddings led to refined clustering.
 - Automatic topic number selection simplified the process.
+
+
 
 ---
 
